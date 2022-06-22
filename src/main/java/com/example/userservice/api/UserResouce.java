@@ -21,7 +21,7 @@ public class UserResouce {
 
     private final UserService userService;
 
-    @GetMapping("/alluser")
+    @GetMapping("/user")
     public ResponseEntity<List<User>> getUser(){
         return ResponseEntity.ok().body(userService.getUsers());
     }
